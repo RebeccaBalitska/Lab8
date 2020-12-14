@@ -1,0 +1,10 @@
+from math import sqrt, sin
+
+def left_square(a, b):
+    return (b - a) * (sqrt((4 * a) + sin(sqrt(a ** 3))))
+
+a = int(input('Введіть а: '))
+b = int(input("Введіть b: "))
+
+s = left_square(a, 3) + left_square(a, b)
+print("S = ", s)
