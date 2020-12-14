@@ -1,0 +1,13 @@
+from math import sin, cos
+
+def count_g(id):
+    if id == 0:
+        return 9
+    if id == 1:
+        return 35
+    else:
+        return sin(count_g(id - 1) + cos(count_g(id - 2)))
+
+print("s = ", count_g(7) + count_g(9))
+
+	
