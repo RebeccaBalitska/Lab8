@@ -1,0 +1,16 @@
+from math import sqrt, sin
+
+def func(x, y):
+    if x > 0 and y > 0:
+        return (x ** 3) + sqrt((x ** 2) + (y ** 4))
+    elif x > 0 and y < 0:
+        return ((x ** 2) - 2*x + sqrt(x)) / (x ** (3 / 5))
+    else:
+        return sin(x * y)
+
+a = float(input("Введіть а: "))
+b = float(input("Введіть b: "))
+
+u = func(a, b) + func(2, a) + 2
+
+print("U = ", u)
